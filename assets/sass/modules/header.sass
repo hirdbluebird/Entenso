@@ -1,0 +1,58 @@
+.top-header
+	border-top: 4px solid #7e7e7e
+	padding: 25px 0px
+.search-form
+	float: right
+	display: flex
+	flex-wrap: no-wrap
+	justify-content: center
+	width: 200px
+	height: 35px
+	input[type="search"]
+		width: 100%
+		border: 1px solid #e7e7e7
+		border-right: 0px
+		background: #f3f3f3
+		padding-left: 5px
+	input[type="submit"]
+		background: $color-blue
+		color: white
+		border: none
+		padding: 0px 7px
+
+/**** NAVBAR ******/
+nav.navbar
+	min-height: 0px
+	background: none
+	border: none
+	margin-bottom: 30px
+	.navbar-brand
+		display: none
+	.navbar-collapse
+		padding: 0px
+	ul.nav.navbar-nav
+		width: 100%
+		display: table
+		li
+			display: table-cell
+			float: none
+			a
+				border-top: $color-grey-dark 1px solid
+				border-bottom: $color-grey-dark 1px solid
+				background: $color-grey-light
+				color: #b2b2b2
+				text-align: center
+				text-transform: uppercase
+				padding: 0px
+				line-height: 40px
+				&:hover
+					background: $color-blue
+					border-color: $color-blue
+					color: white
+			&:first-child
+				a
+					border-left: $color-grey-dark 1px solid
+			&:last-child
+				a
+					border-right: $color-grey-dark 1px solid
+
